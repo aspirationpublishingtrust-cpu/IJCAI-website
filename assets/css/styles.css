@@ -1,0 +1,60 @@
+/* Simple custom styles for IJCAI site */ 
+body { 
+    padding-top: 70px; 
+}
+
+/* BLUE BAND BEHIND MENU */
+.navbar {
+    background: #0d47a1 !important;   /* Deep Academic Blue */
+    border-bottom: 4px solid #082d6b;  /* Darker shade for depth */
+}
+
+/* Navbar brand styling */
+.navbar-brand { 
+    font-weight: 600; 
+    color: #ffffff !important;
+}
+
+/* Navbar links */
+.nav-link {
+    color: #e3f2fd !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Highlight active menu tab */
+.nav-link.active {
+    color: #ffffff !important;
+    background-color:#4C7FFF !important;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Footer styling */
+.footer {
+  background: #f8f9fa;
+  padding: 24px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e7e7e7;
+}
+
+/* Homepage banner / jumbotron */
+.jumbotron {
+  padding: 48px;
+  background: linear-gradient(90deg,#f7fbff,#ffffff);
+  border-radius: 8px;
+}
+
+/* Section headers */
+.section-title { 
+    margin-bottom: 18px; 
+    font-weight: 600; 
+}
+
+/* Card default height */
+.card-placeholder { 
+    min-height: 120px; 
+}

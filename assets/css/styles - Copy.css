@@ -1,0 +1,16 @@
+/* Simple custom styles for IJCAI site */
+body { padding-top: 70px; }
+.navbar-brand { font-weight: 600; }
+.footer {
+  background: #f8f9fa;
+  padding: 24px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e7e7e7;
+}
+.jumbotron {
+  padding: 48px;
+  background: linear-gradient(90deg,#f7fbff,#ffffff);
+  border-radius: 8px;
+}
+.section-title { margin-bottom: 18px; font-weight: 600; }
+.card-placeholder { min-height: 120px; }
