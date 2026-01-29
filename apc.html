@@ -37,7 +37,177 @@
     <p>For the launch phase, IJCAI charges <strong>no APC</strong>. This is to encourage high-quality submissions and build the journal's initial archive.</p>
 
     <h4 class="mt-3">Future APC Policy</h4>
-    <p>APC may be introduced later to support DOI registration, platform hosting, and editorial operations. Any APC changes will be announced in advance.</p>
+    <ul>
+<li> Indian Author: INR 12000</li>
+<li> Foreign Author: USD 1000</li></ul>
+
+<section id="apc-waiver-policy">
+  <h2>APC Waiver Policy (From Issue 2 Onwards)</h2>
+  <p>
+    The <strong>Interdisciplinary Journal of Computing & AI (IJCAI)</strong> offers
+    <strong>partial APC waivers of 70%–90%</strong> to promote equitable and inclusive
+    scholarly publishing. Waiver requests do not influence editorial or peer-review
+    decisions.
+  </p>
+
+  <h3>Waiver Categories</h3>
+  <ul>
+    <li>
+      <strong>90% Waiver:</strong>
+      Early-career researchers (PhD/Postdoctoral), authors from low-income regions,
+      or manuscripts demonstrating exceptional originality, interdisciplinary impact,
+      and absence of publication funding.
+    </li>
+    <li>
+      <strong>80% Waiver:</strong>
+      Manuscripts with strong academic merit, first-time or early-career authors,
+      interdisciplinary research, or authors from institutions with limited funding.
+    </li>
+    <li>
+      <strong>70% Waiver:</strong>
+      Independent researchers, authors from developing regions, participants in IJCAI
+      capacity-building activities, or authors with partial funding constraints.
+    </li>
+  </ul>
+
+  <h3>Process & Ethics</h3>
+  <ul>
+    <li>Waivers are evaluated independently of peer review</li>
+    <li>Editors and reviewers do not have access to waiver requests</li>
+    <li>Editorial decisions are based solely on academic quality</li>
+    <li>All waiver decisions are final and transparent</li>
+  </ul>
+</section>
+<section id="apc-waiver-exclusions">
+  <h3>Waiver Exclusions</h3>
+  <p>
+    APC waivers will <strong>not</strong> be granted under the following circumstances:
+  </p>
+  <ul>
+    <li>Manuscripts with confirmed plagiarism, excessive AI-generated content, or ethical violations</li>
+    <li>Submissions requiring extensive language rewriting or editorial correction</li>
+    <li>Authors affiliated with well-funded institutions, industry-sponsored research, or funded projects</li>
+    <li>Manuscripts submitted via paper mills, third-party agencies, or ghostwriting services</li>
+    <li>Authors who do not disclose funding sources or conflicts of interest</li>
+    <li>Repeat submissions previously rejected for ethical or quality concerns</li>
+    <li>Late waiver requests submitted after peer-review or acceptance</li>
+  </ul>
+</section>
+
+
+ <section class="mt-5">
+  <h3 class="section-title">APC Waiver Request Form</h3>
+  <p>
+    Authors may request a partial APC waiver (70%–90%) based on eligibility criteria.
+    Waiver requests are evaluated independently of peer review decisions.
+  </p>
+
+  <form method="POST"
+        action="https://script.google.com/macros/s/AKfycbzgNPBnsl8FFtAiZ0nzubVzRwEOd6L5HIU_B-YsCRI3twB9-uxojR_CpYuzq_xKwp8M/exec"
+        class="mt-4">
+
+    <div class="mb-3">
+      <label for="author-name" class="form-label">
+        <strong>Corresponding Author Name</strong>
+      </label>
+      <input type="text" class="form-control" id="author-name"
+             name="author_name" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">
+        <strong>Institutional Email Address</strong>
+      </label>
+      <input type="email" class="form-control" id="email"
+             name="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="institution" class="form-label">
+        <strong>Affiliated Institution</strong>
+      </label>
+      <input type="text" class="form-control" id="institution"
+             name="institution" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="country" class="form-label">
+        <strong>Country</strong>
+      </label>
+      <input type="text" class="form-control" id="country"
+             name="country" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="manuscript-title" class="form-label">
+        <strong>Manuscript Title</strong>
+      </label>
+      <input type="text" class="form-control" id="manuscript-title"
+             name="manuscript_title" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="waiver-percentage" class="form-label">
+        <strong>Requested Waiver Percentage</strong>
+      </label>
+      <select class="form-select" id="waiver-percentage"
+              name="waiver_percentage" required>
+        <option value="">Select</option>
+        <option value="70%">70%</option>
+        <option value="80%">80%</option>
+        <option value="90%">90%</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="justification" class="form-label">
+        <strong>Justification for Waiver Request</strong>
+      </label>
+      <textarea class="form-control" id="justification"
+                name="justification" rows="5" required
+        placeholder="Briefly describe financial constraints, institutional limitations, or academic merit.">
+      </textarea>
+    </div>
+
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox"
+             id="originality-confirmed"
+             name="originality_confirmed"
+             value="Yes" required>
+      <label class="form-check-label" for="originality-confirmed">
+        I confirm that this manuscript is original, not entirely AI-generated,
+        has not been submitted elsewhere, and complies with IJCAI ethical policies.
+      </label>
+    </div>
+
+    <div class="form-check mb-4">
+      <input class="form-check-input" type="checkbox"
+             id="waiver-policy-ack"
+             name="waiver_policy_acknowledged"
+             value="Yes" required>
+      <label class="form-check-label" for="waiver-policy-ack">
+        I understand that waiver approval is at the sole discretion of the Editorial Board
+        and does not influence the peer-review outcome.
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      Submit Waiver Request
+    </button>
+
+  </form>
+</section>
+
+
+
+  <p style="font-size: 0.9em; margin-top: 10px;">
+    <em>
+      Note: Waiver approval is independent of manuscript acceptance.
+      IJCAI reserves the right to request supporting documentation.
+    </em>
+  </p>
+</section>
+<p> APCs collected by Aspiration Publishing Trust are used solely to cover publishing operations, support reviewers and editors, provide fee waivers, ensure research integrity, and sustain the journal—no surplus is distributed as profit.</p>
   </main>
 
   <footer class="footer"><div class="container text-center"><p>© <span id="y11"></span> Aspiration Publishing Trust</p></div></footer>
@@ -45,3 +215,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
