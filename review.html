@@ -1,41 +1,103 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Peer Review — IJCAI</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IJCAI — Interdisciplinary Journal of Computing & AI</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/styles.css" rel="stylesheet">
 </head>
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const countryFilter = document.getElementById("countryFilter");
+  const table = document.getElementById("reviewerTable");
+  const rows = table.getElementsByTagName("tr");
+
+  function filterTable() {
+    const searchValue = searchInput.value.toLowerCase();
+    const countryValue = countryFilter.value;
+
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      const text = row.innerText.toLowerCase();
+
+      const flag = row.querySelector("span.fi");
+      const countryClass = flag ? flag.classList[1] : "";
+
+      const matchesSearch = text.includes(searchValue);
+      const matchesCountry = countryValue === "" || countryClass === countryValue;
+
+      if (matchesSearch && matchesCountry) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    }
+  }
+
+  searchInput.addEventListener("keyup", filterTable);
+  countryFilter.addEventListener("change", filterTable);
+</script>
 <body>
-  <!-- navbar -->
+<!-- TOP PUBLISHER BAND -->
+<div class="publisher-bar">
+  <div class="container-fluid d-flex align-items-center px-2">
+    
+    <img src="assets/img/Aspiration Logo.png" alt="APT" height="34" class="me-2">
+    
+    <span class="publisher-text">
+      Aspiration Publishing Trust
+    </span>
+
+  </div>
+</div>
+  <!-- NAV -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-    <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo-placeholder.png" height="28" class="me-2">IJCAI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMain"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarsMain"><ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+  <img src="assets/img/logo-placeholder.png" alt="IJCAI" height="40" class="me-2">
+  <div>
+    <div style="font-weight:700; font-size:1.05rem;">IJCAI</div>
+    <div class="journal-subtitle">
+  Interdisciplinary Journal of Computing & AI
+</div>
+  </div>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="aims.html">Aims & Scope</a></li>
           <li class="nav-item"><a class="nav-link" href="board.html">Editorial Board</a></li>
           <li class="nav-item"><a class="nav-link" href="current.html">Current Issue</a></li>
-	 <li class="nav-item"><a class="nav-link" href="archives.html">Archives</a></li>
+          <li class="nav-item"><a class="nav-link" href="archives.html">Archives</a></li>
           <li class="nav-item"><a class="nav-link" href="authors.html">Author Guidelines</a></li>
           <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
           <li class="nav-item"><a class="nav-link" href="submit.html">Submit</a></li>
- 	<li class="nav-item"><a class="nav-link" href="ethics.html">Ethics</a></li>
+          <li class="nav-item"><a class="nav-link" href="ethics.html">Ethics</a></li>
           <li class="nav-item"><a class="nav-link active" href="review.html">Review</a></li>
           <li class="nav-item"><a class="nav-link" href="apc.html">APC</a></li>
-
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-
-      </ul></div>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <main class="container mt-4">
-    <h1>Peer Review Policy</h1>
-    <p>IJCAI uses a double-blind peer review process. The editorial office performs initial checks for scope and plagiarism. Suitable manuscripts are sent to a minimum of two expert reviewers.</p>
+    <div class="mb-4">
+    <span class="btn btn-primary btn-lg px-5 py-3">
+      Peer Review policy
+    </span>
+  </div>
+    <div class="alert alert-info">IJCAI uses a single-blind peer review process. The editorial office performs initial checks for scope and plagiarism. Suitable manuscripts are sent to a minimum of two expert reviewers.</div>
 
-    <h4 class="mt-3">Review Stages</h4>
+
+    <h4 class="mt-4"><strong>Review Stages</strong></h4>
     <ol>
       <li>Initial Editorial Check (scope, format, plagiarism)</li>
       <li>Assignment to 2 external reviewers</li>
@@ -44,8 +106,286 @@
       <li>Copyediting and DOI assignment</li>
     </ol>
 
-    <h4 class="mt-3">Reviewer Guidelines</h4>
+    <h4 class="mt-4"><strong>Reviewer Guidelines</strong></h4>
     <p>Reviewers should provide objective, constructive feedback with clear recommendations. Confidentiality must be maintained.</p>
+
+<div class="container mt-4">
+
+  <h4 class="mt-4"><strong>Reviewers</strong></h4>
+
+  <!-- Search + Filter -->
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="text" id="searchInput" class="form-control" placeholder="Search by name or organization...">
+    </div>
+    <div class="col-md-4">
+      <select id="countryFilter" class="form-select">
+        <option value="">All Countries</option>
+        <option value="fi-in">India</option>
+        <option value="fi-us">USA</option>
+        <option value="fi-au">Australia</option>
+        <option value="fi-bd">Bangladesh</option>
+        <option value="fi-sa">Saudi Arabia</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="table-responsive">
+    <table id="reviewerTable" class="table table-bordered table-hover align-middle table-sm small">
+
+      <thead class="table-light">
+        <tr>
+          <th>Country</th>
+          <th>Name</th>
+          <th>Organization</th>
+          <th>Profile</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td><span class="fi fi-au"></span></td>
+          <td>Dr. Ana Penteado</td>
+          <td>Notre Dame University, Australia</td>
+          <td><a href="https://scholar.google.com/citations?user=quVnEr0AAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-us"></span></td>
+          <td>Mr. Hitesh Chugani</td>
+          <td>Oracle, USA</td>
+          <td><a href="https://scholar.google.com/citations?user=oJ9zoxgAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-us"></span></td>
+          <td>Mr. Rahul Reddy Hanumanthgari</td>
+          <td>LabCorp, USA (AI Engineering)</td>
+          <td><a href="https://orcid.org/0009-0001-0669-4694" target="_blank"><i class="bi bi-person-badge"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-bd"></span></td>
+          <td>Md. Ibne Shihab Shad</td>
+          <td>Pabna University of Science and Technology, Bangladesh</td>
+          <td><a href="https://scholar.google.com/citations?user=Ez2DV1UAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-us"></span></td>
+          <td>Sai Santosh Goud Bandari</td>
+          <td>TCS, USA</td>
+          <td><a href="https://orcid.org/0009-0009-1101-5842" target="_blank"><i class="bi bi-person-badge"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Navjot Kaur Kanwal</td>
+          <td>Guru Ghasidas Central University, India</td>
+          <td><a href="https://scholar.google.com/citations?user=YRzl_WkAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Saurabh Shrivastava</td>
+          <td>Bundelkhand University, India</td>
+          <td><a href="https://scholar.google.com/citations?user=Du-LzhAAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Swagata Roy Chatterjee</td>
+          <td>NSEC, Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=jBFNmQIAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Sudip Kumar Palit</td>
+          <td>UEM Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=USyKExoAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Shambhu Prasad Chakrabarty</td>
+          <td>IIIJS, Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=iqGbt2UAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Abhisikta Basu</td>
+          <td>UEM Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=CXE1PFoAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Poulomi Mukherjee</td>
+          <td>UEM Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=bg0FvRIAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Nilanjana Dutta Roy</td>
+          <td>Amity University, Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=6Xw38QEAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Sukanya Mukherjee</td>
+          <td>IEM Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=FH-HWXMAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Indraneel Mukhopadhyay</td>
+          <td>Amity University, Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=y79SUZkAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+<tr>
+          <td><span class="fi fi-us"></span></td>
+          <td>Dr. Saurav Mallik</td>
+          <td>Harvard University, USA</td>
+          <td><a href="https://scholar.google.com/citations?user=e-6kvkIAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Dibya Jyoti Bora</td>
+          <td>Kaziranga University, India</td>
+          <td><a href="https://scholar.google.com/citations?user=FY7bIDsAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-us"></span></td>
+          <td>Mr. Sai Krishna Gunda</td>
+          <td>ElevateX, USA</td>
+          <td><a href="https://scholar.google.com/citations?user=GPrd-8MAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Mahima Sharma</td>
+          <td>Compucom Institute, Jaipur, India</td>
+          <td><a href="https://scholar.google.com/citations?user=5MStNPwAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-sa"></span></td>
+          <td>Dr. Mudassir Khan</td>
+          <td>King Khalid University, Saudi Arabia</td>
+          <td><a href="https://scholar.google.com/citations?user=YMyjFc8AAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Baranidharan B</td>
+          <td>ISI Bangalore, India</td>
+          <td><a href="https://scholar.google.com/citations?user=WQ0KMh4AAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Tanurup Das</td>
+          <td>WBNUJS, Kolkata, India</td>
+          <td><a href="https://scholar.google.com/citations?user=KRNbzfMAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+        <tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Monali Gulhane</td>
+          <td>Symbiosis Institute of Technology, Nagpur, India</td>
+          <td><a href="https://scholar.google.com/citations?user=EcZyccwAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+<tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Rajesh Kumar</td>
+          <td>Government Institute of Forensic Science, Chhatrapati Sambhajinagar (M.S.), India</td>
+          <td><a href="https://scholar.google.com/citations?user=qm786cMAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+<tr>
+          <td><span class="fi fi-in"></span></td>
+          <td>Dr. Jadav Chandra Das</td>
+          <td>MAKAUT,WB India</td>
+          <td><a href="https://scholar.google.com/citations?user=43nFahkAAAAJ&hl=en" target="_blank"><i class="bi bi-google"></i></a></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const searchInput = document.getElementById("searchInput");
+  const countryFilter = document.getElementById("countryFilter");
+  const table = document.getElementById("reviewerTable");
+  const rows = table.getElementsByTagName("tr");
+
+  function getCountryClass(flagElement) {
+    if (!flagElement) return "";
+    for (let cls of flagElement.classList) {
+      if (cls.startsWith("fi-") && cls !== "fi") {
+        return cls;
+      }
+    }
+    return "";
+  }
+
+  function filterTable() {
+    const searchValue = searchInput.value.toLowerCase();
+    const countryValue = countryFilter.value;
+
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      const text = row.innerText.toLowerCase();
+
+      const flag = row.querySelector("span.fi");
+      const countryClass = getCountryClass(flag);
+
+      const matchesSearch = text.includes(searchValue);
+      const matchesCountry = countryValue === "" || countryClass === countryValue;
+
+      row.style.display = (matchesSearch && matchesCountry) ? "" : "none";
+    }
+  }
+
+  searchInput.addEventListener("keyup", filterTable);
+  countryFilter.addEventListener("change", filterTable);
+
+});
+</script>
+<div class="alert alert-light border mt-4">
+  <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+    
+    <div>
+      <h6 class="mb-1"><strong>Join Our Reviewer Panel</strong></h6>
+      <small class="text-muted">
+        We invite qualified researchers and professionals to join as Reviewers.
+      </small>
+<p class="mt-2 text-muted small">
+  Selection is based on research experience, publication record, and domain expertise.
+</p>
+    </div>
+
+    <div class="mt-3 mt-md-0">
+      <a href="https://forms.gle/VNnWPXgyDmWoakWD6" target="_blank" class="btn btn-primary">
+        Apply Now
+      </a>
+    </div>
+
+  </div>
+</div>
   </main>
 
   <footer class="footer"><div class="container text-center"><p>© <span id="y10"></span> Aspiration Publishing Trust</p></div></footer>
