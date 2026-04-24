@@ -1,7 +1,5 @@
 /* Simple custom styles for IJCAI site */ 
-body { 
-    padding-top: 70px; 
-}
+
 
 /* BLUE BAND BEHIND MENU */
 .navbar {
@@ -58,3 +56,37 @@ body {
 .card-placeholder { 
     min-height: 120px; 
 }
+.publisher-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d6e4f0 !important; /* lighter + visible contrast */
+  padding: 12px 0;                      /* slightly taller */
+  z-index: 1050;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.publisher-text {
+  color: #1a1a1a;   /* dark text */
+  align:left;
+  font-size: 1.50rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  top: 52px; /* matches new height */
+  z-index: 1040;
+}
+body {
+  padding-top: 120px; /* prevents overlap */
+}
+.journal-subtitle {
+  font-size: 0.8rem;
+  color: #ffffff;  /* pure white */
+  opacity: 0.9;    /* slightly softer than main title */
+}
+<style>
+  #searchInput, #countryFilter {
+    box-shadow: none;
+  }
+</style>
