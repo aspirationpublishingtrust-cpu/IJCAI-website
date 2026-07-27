@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Reviewer Portal — APTUS</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="assets/css/styles.css" rel="stylesheet">
+
+</head>
+
+
+<!-- ===========================================================
+SUCCESS MODAL
+=========================================================== -->
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content border-0 shadow-lg">
+
+<div class="modal-header bg-success text-white">
+
+<h5 class="modal-title">
+
+✓ Review Submitted Successfully
+
+</h5>
+
+</div>
+
+<div class="modal-body text-center py-4">
+
+<div style="font-size:55px;color:#198754;">
+
+✓
+
+</div>
+
+<h4 class="mt-3 mb-3">
+
+Thank You!
+
+</h4>
+
+<p>
+
+Your peer review has been received successfully.
+
+</p>
+
+<p>
+
+The review has been forwarded to the
+
+<strong>Editor-in-Chief.</strong>
+
+</p>
+
+<hr>
+
+<p class="mb-0">
+
+No further action is required.
+
+</p>
+
+</div>
+
+<div class="modal-footer">
+
+<button class="btn btn-success"
+
+data-bs-dismiss="modal">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<body>
+
+<!-- ===========================================================
+TOP PUBLISHER BAR
+=========================================================== -->
+
+<div class="publisher-bar">
+
+<div class="container-fluid d-flex align-items-center px-2">
+
+<img src="assets/img/Aspiration Logo.png"
+
+height="34"
+
+class="me-2">
+
+<span class="publisher-text">
+
+Aspiration Publishing Trust
+
+</span>
+
+</div>
+
+</div>
+
+
+<!-- ===========================================================
+NAVIGATION
+=========================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+
+<a class="navbar-brand d-flex align-items-center"
+
+href="index.html">
+
+<div>
+
+<div style="font-weight:700;font-size:1.05rem;">
+
+APTUS
+
+</div>
+
+<div class="journal-subtitle">
+
+Journal of Cyber Governance and Digital Justice
+
+</div>
+
+</div>
+
+</a>
+
+<button class="navbar-toggler"
+
+type="button"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#navbarsMain">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+
+id="navbarsMain">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+<li class="nav-item"><a class="nav-link" href="aims.html">Aims & Scope</a></li>
+
+<li class="nav-item"><a class="nav-link" href="board.html">Editorial Board</a></li>
+
+<li class="nav-item"><a class="nav-link" href="current.html">Current Issue</a></li>
+
+<li class="nav-item"><a class="nav-link" href="archives.html">Archives</a></li>
+
+<li class="nav-item"><a class="nav-link" href="authors.html">Author Guidelines</a></li>
+
+<li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+
+<li class="nav-item"><a class="nav-link active" href="reviewer.html">Reviewer Portal</a></li>
+
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+<!-- ===========================================================
+MAIN CONTENT
+=========================================================== -->
+
+<main class="container mt-4">
+
+<div class="mb-4">
+
+<span class="btn btn-primary btn-lg px-5 py-3">
+
+Reviewer Submission Portal
+
+</span>
+
+</div>
+
+
+<h4 class="mt-4">
+
+<strong>Peer Review Submission</strong>
+
+</h4>
+
+<div class="alert alert-info">
+
+This portal is exclusively for invited reviewers of
+<strong>APTUS – Journal of Cyber Governance and Digital Justice.</strong>
+
+Please complete the review form and upload your review report.
+
+All submitted reviews remain confidential and are accessible only to the Editor-in-Chief.
+
+</div>
+
+
+<section class="mt-5">
+
+<h4>
+
+<strong>Reviewer Information</strong>
+
+</h4>
+
+<form id="reviewForm" class="mt-4">
+    
+<input type="hidden" id="assignment-token">
+
+<input type="hidden" id="assignment-id">
+
+<input type="hidden" id="reviewer-id">
+
+<!-- Reviewer Name -->
+
+<div class="mb-3">
+
+<label class="form-label">
+
+<strong>Reviewer Name</strong>
+
+</label>
+
+<input
+
+type="text"
+
+class="form-control"
+
+id="reviewer-name"
+
+name="reviewer_name"
+
+required
+
+readonly>
+
+</div>
+
+
+<!-- Reviewer Email -->
+
+<div class="mb-3">
+
+<label class="form-label">
+
+<strong>Reviewer Email Address</strong>
+
+</label>
+
+<input
+
+type="email"
+
+class="form-control"
+
+id="reviewer-email"
+
+name="reviewer_email"
+
+required
+
+readonly>
+
+</div>
+
+
+<!-- Manuscript Title -->
+
+<div class="mb-3">
+
+<label class="form-label">
+
+<strong>Manuscript Title</strong>
+
+</label>
+
+<input
+
+type="text"
+
+class="form-control"
+
+id="manuscript-title"
+
+name="manuscript_title"
+
+required
+
+readonly>
+
+</div>
+
+
+<!-- Recommendation -->
+
+<div class="mb-3">
+
+<label class="form-label d-block">
+
+<strong>Editorial Recommendation</strong>
+
+</label>
+
+<div class="form-check">
+
+<input
+
+class="form-check-input"
+
+type="radio"
+
+name="recommendation"
+
+id="accept"
+
+value="Accept"
+
+required>
+
+<label class="form-check-label" for="accept">
+
+Accept
+
+</label>
+
+</div>
+
+<div class="form-check">
+
+<input
+
+class="form-check-input"
+
+type="radio"
+
+name="recommendation"
+
+id="minor"
+
+value="Minor Revision">
+
+<label class="form-check-label" for="minor">
+
+Minor Revision
+
+</label>
+
+</div>
+
+<div class="form-check">
+
+<input
+
+class="form-check-input"
+
+type="radio"
+
+name="recommendation"
+
+id="major"
+
+value="Major Revision">
+
+<label class="form-check-label" for="major">
+
+Major Revision
+
+</label>
+
+</div>
+
+<div class="form-check">
+
+<input
+
+class="form-check-input"
+
+type="radio"
+
+name="recommendation"
+
+id="reject"
+
+value="Reject">
+
+<label class="form-check-label" for="reject">
+
+Reject
+
+</label>
+
+</div>
+
+</div>
+
+<!-- ===========================================================
+CONFIDENTIAL COMMENTS
+=========================================================== -->
+
+<div class="mb-3">
+
+<label for="comments" class="form-label">
+
+<strong>Confidential Comments to the Editor</strong>
+
+</label>
+
+<textarea
+
+class="form-control"
+
+id="comments"
+
+name="comments"
+
+rows="8"
+
+required
+
+placeholder="Please provide your detailed review comments, suggestions for improvement, strengths, weaknesses, novelty assessment, and any confidential remarks intended only for the Editor-in-Chief."></textarea>
+
+<div class="form-text">
+
+These comments are confidential and will be received only by the Editor-in-Chief.
+
+</div>
+
+</div>
+
+
+<!-- ===========================================================
+UPLOAD REVIEW REPORT
+=========================================================== -->
+
+<div class="mb-3">
+
+<label for="reviewFile"
+
+class="form-label">
+
+<strong>Upload Review Report (.pdf or .docx)</strong>
+
+</label>
+
+<input
+
+type="file"
+
+class="form-control"
+
+id="reviewFile"
+
+name="review_file"
+
+accept=".pdf,.docx"
+
+required>
+
+<div class="form-text">
+
+Maximum file size allowed: 25 MB.
+
+</div>
+
+</div>
+
+
+<!-- ===========================================================
+REVIEWER DECLARATION
+=========================================================== -->
+
+<div class="form-check mb-4">
+
+<input
+
+class="form-check-input"
+
+type="checkbox"
+
+id="reviewDeclaration"
+
+required>
+
+<label class="form-check-label"
+
+for="reviewDeclaration">
+
+<strong>Declaration:</strong>
+
+I confirm that I have reviewed this manuscript independently,
+to the best of my professional knowledge,
+and that my comments and recommendation are impartial,
+confidential,
+and intended solely for editorial evaluation.
+
+</label>
+
+</div>
+
+
+<!-- ===========================================================
+SUBMIT BUTTON
+=========================================================== -->
+
+<button
+
+type="submit"
+
+id="submitBtn"
+
+class="btn btn-primary btn-lg mb-5">
+
+Submit Review
+
+</button>
+
+</form>
+
+</section>
+
+
+<!-- ===========================================================
+REVIEW POLICY
+=========================================================== -->
+
+<h4 class="mt-4">
+
+<strong>Reviewer Guidelines</strong>
+
+</h4>
+
+<ul>
+
+<li>
+
+Review reports should be objective,
+constructive,
+and evidence-based.
+
+</li>
+
+<li>
+
+Comments intended for the authors should be included within the uploaded review report.
+
+</li>
+
+<li>
+
+Confidential remarks entered above will only be accessible to the Editor-in-Chief.
+
+</li>
+
+<li>
+
+Recommendations should reflect the overall scientific quality,
+originality,
+clarity,
+and significance of the manuscript.
+
+</li>
+
+<li>
+
+Please avoid including any identifying information if a blind review process is being followed.
+
+</li>
+
+</ul>
+
+
+<div class="alert alert-warning">
+
+<strong>Confidentiality Notice:</strong>
+
+All review reports submitted through this portal are treated as confidential editorial documents and will be accessed only by the Editor-in-Chief of APTUS.
+
+</div>
+
+</main>
+
+
+<!-- ===========================================================
+FOOTER
+=========================================================== -->
+
+<footer class="footer">
+
+<div class="container text-center">
+
+<p>
+
+© <span id="y8"></span>
+
+Aspiration Publishing Trust
+
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- ===========================================================
+BOOTSTRAP
+=========================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+document.getElementById("y8").innerText =
+new Date().getFullYear();
+
+</script>
+
+
+<!-- ===========================================================
+JAVASCRIPT STARTS HERE
+(PART 3)
+=========================================================== -->
+
+<script>
+    
+
+/* ==========================================================
+   GOOGLE APPS SCRIPT WEB APP URL
+========================================================== */
+
+
+
+const SCRIPT_URL =
+"https://script.google.com/macros/s/AKfycbxmqqs2a_rq6H_ZG5frkk5RcZGgxAUdkhyg48DgKNVQ32AvVHTfQjaqH2WPPiSwwJ6jSA/exec";
+
+
+
+let reviewerToken = null;
+
+let assignmentData = null;
+
+
+
+/* ==========================================================
+   VALIDATE REVIEWER TOKEN
+========================================================== */
+
+
+async function validateReviewerToken(){
+
+
+    const params =
+    new URLSearchParams(
+        window.location.search
+    );
+
+
+    reviewerToken =
+    params.get("token");
+
+
+
+    if(!reviewerToken){
+
+
+        document.body.innerHTML =
+
+        "<h3 style='text-align:center;margin-top:100px'>Invalid reviewer link.</h3>";
+
+
+        return false;
+
+    }
+
+
+
+    const response =
+    await fetch(SCRIPT_URL, {
+
+
+        method:"POST",
+
+
+        body:JSON.stringify({
+
+            action:"validateToken",
+
+            token:reviewerToken
+
+        })
+
+
+    });
+
+
+
+    const result =
+    await response.json();
+
+
+
+    if(!result.valid){
+
+
+        document.body.innerHTML =
+
+        "<h3 style='text-align:center;margin-top:100px'>" +
+
+        "Access denied.<br>" +
+
+        result.message +
+
+        "</h3>";
+
+
+        return false;
+
+    }
+
+
+
+    assignmentData=result;
+
+
+
+    document.getElementById(
+        "reviewer-name"
+    ).value =
+    result.reviewerName;
+
+
+
+    document.getElementById(
+        "reviewer-email"
+    ).value =
+    result.reviewerEmail;
+
+
+
+    document.getElementById(
+        "manuscript-title"
+    ).value =
+    result.manuscriptTitle;
+
+
+
+    document.getElementById(
+        "assignment-token"
+    ).value =
+    reviewerToken;
+
+
+
+    document.getElementById(
+        "assignment-id"
+    ).value =
+    result.assignmentID;
+
+
+
+    document.getElementById(
+        "reviewer-id"
+    ).value =
+    result.reviewerID;
+
+
+
+}
+
+
+
+
+window.addEventListener(
+"load",
+validateReviewerToken
+);
+
+
+
+
+/* ==========================================================
+   FORM SUBMISSION
+========================================================== */
+
+
+const form =
+document.getElementById("reviewForm");
+
+
+const submitBtn =
+document.getElementById("submitBtn");
+
+
+
+form.addEventListener(
+"submit",
+async function(e){
+
+
+e.preventDefault();
+
+
+
+submitBtn.disabled=true;
+
+
+submitBtn.innerHTML=
+"Submitting...";
+
+
+
+try{
+
+
+const fileInput =
+document.getElementById("reviewFile");
+
+
+
+if(fileInput.files.length===0){
+
+throw new Error(
+"Please select a review report."
+);
+
+}
+
+
+
+const file =
+fileInput.files[0];
+
+
+
+if(file.size > 25*1024*1024){
+
+throw new Error(
+"File size exceeds 25 MB."
+);
+
+}
+
+
+
+
+const base64Data =
+await toBase64(file);
+
+
+
+
+const payload = {
+
+
+assignment_token:
+reviewerToken,
+
+
+assignment_id:
+assignmentData.assignmentID,
+
+
+reviewer_id:
+assignmentData.reviewerID,
+
+
+reviewer_name:
+assignmentData.reviewerName,
+
+
+reviewer_email:
+assignmentData.reviewerEmail,
+
+
+
+manuscript_title:
+assignmentData.manuscriptTitle,
+
+
+
+recommendation:
+
+document.querySelector(
+'input[name="recommendation"]:checked'
+).value,
+
+
+
+comments:
+
+document.getElementById(
+"comments"
+).value,
+
+
+
+fileName:
+file.name,
+
+
+
+mimeType:
+file.type,
+
+
+
+fileData:
+base64Data
+
+
+};
+
+
+
+
+const response =
+await fetch(
+SCRIPT_URL,
+{
+
+method:"POST",
+
+body:
+JSON.stringify(payload)
+
+}
+);
+
+
+
+const result =
+await response.json();
+
+
+
+if(result.status==="success"){
+
+
+
+const modal =
+new bootstrap.Modal(
+document.getElementById(
+"successModal"
+)
+);
+
+
+
+modal.show();
+
+
+form.reset();
+
+
+
+}
+
+else{
+
+
+throw new Error(
+result.message
+||
+"Submission failed."
+);
+
+
+}
+
+
+
+}
+
+
+catch(err){
+
+
+alert(
+"Upload failed.\n\n"
++
+err.message
+);
+
+
+console.error(err);
+
+
+}
+
+
+finally{
+
+
+submitBtn.disabled=false;
+
+
+submitBtn.innerHTML=
+"Submit Review";
+
+
+}
+
+
+
+});
+
+
+
+
+
+/* ==========================================================
+   FILE TO BASE64
+========================================================== */
+
+
+function toBase64(file){
+
+
+return new Promise(
+(resolve,reject)=>{
+
+
+const reader =
+new FileReader();
+
+
+
+reader.readAsDataURL(file);
+
+
+
+reader.onload=()=>{
+
+
+resolve(
+reader.result.split(",")[1]
+);
+
+
+};
+
+
+
+reader.onerror=
+error=>reject(error);
+
+
+
+});
+
+
+}
+
+
+
+</script>
