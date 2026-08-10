@@ -1,1 +1,642 @@
+[
+{
+"id":"IJCAI-Vol1-Issue1-1",
 
+"title":"Predictive Analysis of Readmission Risk of Heart Failure Patients within 28 days",
+
+"authors":[
+"Sahith Aitha",
+"Muhammad Adib Uz Zaman"
+],
+
+"affiliations":[
+"School of Information Technology, University of Cincinnati, Ohio, United States of America"
+],
+
+"abstract":"Heart failure (HF) is one of the emerging global health issues and a leading cause of readmission as well as a source of healthcare system strain due to escalating expenses. Proper identification of patients with high risks of readmission early, especially within 28 days, presents an opportunity to intervene before the patient is readmitted. In our paper, we suggest a machine learning-based model to forecast the risk of early readmission with the help of structured electronic health record (EHR) data. We put different preprocessing methods, SHAP-based feature pruning, and cost-sensitive learning into our pipeline, as well as tuning thresholds. We tested and trained several models like Support Vector Machines (SVM), XGBoost, LightGBM, and a Stacked Ensemble model. The stacked model, with threshold tuning and SHAP interpretability, appeared superior in terms of the cases of high-risk detection. Our findings indicate that the use of interpretability and recall-optimized thresholding would provide a fair and clinically feasible readmission prediction approach.",
+
+"keywords":[
+"Class Imbalance",
+"Electronic Health Records",
+"Ensemble Learning",
+"Heart failure",
+"Machine Learning", 
+"Readmission Prediction"
+
+],
+
+"doi":"https://doi.org/10.5281/zenodo.18228018",
+
+"pdf":"articles/Vol1/Issue1/IJCAI-Vol1-Issue1-1.pdf",
+
+"volume":"1",
+
+"issue":"1",
+
+"pages":"1-12",
+
+"received":"10 Dec 2025",
+
+"accepted":"12 Jan 2026",
+
+"published":"13 Jan 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue1-2",
+
+"title":"GPU Power Management: Comparative Analysis and Optimization Using Python and MATLAB Simulations",
+
+"authors":[
+"Saket Kumar Mishra",
+"Krishna Bihari Yadav"
+],
+
+"affiliations":[
+"Department of Electrical Engineering, NIT Jamshedpur"
+],
+
+"abstract":"The growing popularity of High-Performance Computing (HPC), artificial intelligence (AI) and sophisticated graphics display has rendered the management of GPS power as an important design factor. Proposed methodology presented in this paper, is a simulation-based practice to improve the energy efficiency of Intel Arc™ GPUs and the Intel CPUs to overcome the issue of power inefficiency, workload imbalance, and thermal limitations. The diagrammatic analysis of MATLAB/Simulink model is used to study the dynamic power behavior of system components under different load conditions. The Intel Arc A770, A750, and B580 GPUs, the Intel Core i7- 14700K processor, and a high-voltage Switched- Mode Power Supply (SMPS) are implemented in the model and make it possible to simulate infrastructure realistically. Dynamic Voltage and Frequency Scaling (DVFS), idle power gating and workload-aware scheduling were all applied using the control systems and power electronics toolboxes in MATLAB. Validation of the experiment was conducted by real-time telemetry logging and Python based analysis of power, usage, temperature and frequency metrics of gaming, AI and compute workloads. Findings indicate that, in high-intensity tasks, the Intel Arc GPUs used less power compared to CPUs with similar tasks, which makes the argument of their energy efficiency advantage in environments with limited energy. The model also captures the thermal feedback and the voltage control in the SMPS and makes it stable under varying loads. Researchers and engineers can use this open-source and reproducible tool to obtain actionable insights for micro-architecture and system design of power-efficient high performance computing systems that are adaptable for innovation to concurrent hardware technologies and emerging, sustainability-driven demands.",
+
+"keywords":[
+"Graphics Processing Unit", "Power Management",
+"Energy Efficiency", "Intel Arc A770", "Intel Core i7-14700K", "Power Load Analysis"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.18503668",
+
+"pdf":"articles/Vol1/Issue1/IJCAI-Vol1-Issue1-2.pdf",
+
+"volume":"1",
+
+"issue":"1",
+
+"pages":"13-27",
+
+"received":"23 Dec 2025",
+
+"accepted":"3 Feb 2026",
+
+"published":"6 Feb 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue1-3",
+
+"title":"FitSpaceAI: A Biometric-Secured Real-Time Virtual Try- On System for AI-Driven Design Preview",
+
+"authors":[
+"Tanmayi Nagale",
+"Atulya Sawant",
+"Nirved Shukla",
+"Sujit Shukla"
+],
+
+"affiliations":[
+"Department of Computer Engineering, Thakur College of Engineering and Technology, Kandivali, Mumbai"
+],
+
+"abstract":"FitSpaceAI is a pioneering virtual try-on application that leverages real-time AI-based face detection to deliver a seamless augmented reality (AR) shopping experience. Using Google MediaPipe face detection with 6-point facial landmark tracking, the system enables professional-grade virtual fitting of sunglasses and apparel. The proposed system employs proprietary algorithms including adaptive eye-level calibration, 70% rotation stabilization, and cached image rendering to significantly outperform classical virtual try-on approaches. The system operates at 30&ndash;60 FPS with sub-100 ms latency using a React.js frontend, HTML5 Canvas API, and WebRTC. Quantitative performance evaluations on 50 participants (28 males, 22 females; ages 18&ndash;45) across varied lighting and hardware conditions yielded 95.2% eye position tracking accuracy (&plusmn;1.4%), 92.8% rotation tracking (&plusmn;2.1%), and 89.7% real- time positional stability (&plusmn;2.8%)&mdash;surpassing current industry standards. Mean user satisfaction: 4.6/5.0 (N=50, &sigma; =0.31), SUS score 82.4 (Excellent). Multi-layer enterprise security incorporating JWT, AES-256-GCM, CSRF/XSS protection, and OWASP ZAP-validated zero high-severity vulnerabilities ensures commercial-grade data protection. Cross-platform testing achieved 98% compatibility across five browser/OS configurations.",
+
+"keywords": [
+"Augmented reality", "Biometric security", "Computer vision", "MediaPipe", "Real-time face detection", "Virtual try-on", "Web-based AR"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.19047077",
+
+"pdf":"articles/Vol1/Issue1/IJCAI-Vol1-Issue1-3.pdf",
+
+"volume":"1",
+
+"issue":"1",
+
+"pages":"28-42",
+
+"received":"13 Feb 2026",
+
+"accepted":"14 Mar 2026",
+
+"published":"16 Mar 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue1-4",
+
+"title":"Creaboost: A Blockchain-Enabled Federated Learning Platform for Privacy-Preserving Ad Preference Insights and Creator Rewards",
+
+"authors":[
+"Ritesh Kumar Shaw",
+"Safiya Ahmed",
+"Stuti Sinha",
+"Subhangi Chatterjee"
+],
+
+"affiliations":[
+"Cybersecurity Centre of Excellence, Institute of Engineering and Management, University of Engineering and Management, Kolkata"
+],
+
+"abstract":"Privacy preserving ad targeting is a major challenge in today's digital environment. It is such an environment where the centralized platforms expose user data and provide creators with low lying compensation. Although current federated learning (FL) models help reduce data leakage but do not have on chain reward systems. Blockchain based reward systems often face issues with slow speeds and high costs on public networks like Ethereum. This paper introduces Creaboost, a decentralized application on the XDC Network. It combines FL with smart contract rewards to allow secure, low-lying cost, and fair ad preference collection to its users. Here the users are going to submit their engagement metrics locally. After five unparalleled submissions, we aggregate model parameters off chain using federated learning. The resulting preference (0 or 1) then triggers an on-chain reward (1 or 2 ether) through a user signed transaction. Creaboost extends through five layers: Client, Frontend (HTML/JS), Backend (Flask), FL Server (PyTorch), and Blockchain. This setup guarantees that the raw data exposure leaves the Ethereum device. We ensure security with SSL/TLS, reCAPTCHA v2, email verification, and XDC signing. Creaboost exceeds both centralized and XDC alternatives by minimizing data exposure, execution costs, and XDC creating a scalable framework for transaction advertising.",
+
+"keywords": [
+"Blockchain incentives", "Federated learning", "Low-latency aggregation", "Privacy-preserving advertising", "Smart contract rewards", "XDC Network"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.19434964",
+
+"pdf":"articles/Vol1/Issue1/IJCAI-Vol1-Issue1-4.pdf",
+
+"volume":"1",
+
+"issue":"1",
+
+"pages":"43-57",
+
+"received":"11 Mar 2026",
+
+"accepted":"2 Apr 2026",
+
+"published":"6 Apr 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue1-5",
+
+"title":"Cyber-Physical Integration of CFD-Based Aerodynamic Optimization and Hash-Based Post-Quantum Secure Control",
+
+"authors":[
+"Bannishikha Banerjee",
+"Indraneel Mukhopadhyay"
+],
+
+"affiliations":[
+"Amity Institute of Information Technology, Amity University, Kolkata"
+],
+
+"abstract":"The convergence of high-fidelity physical modelling and quantum-resilient cybersecurity has become a prerequisite for next-generation autonomous aviation systems. This paper introduces a unified cyber-physical framework incorporating computational fluid dynamics (CFD), reduced-order aerodynamic modelling, autonomous flight control, and hash-based postquantum cryptography. High-resolution CFD simulations of the RAE 2822 transonic airfoil are used to construct compact surrogate aerodynamic models that capture nonlinear flow behaviour while remaining suitable for real-time implementation. These CFD-informed models are integrated into a closed-loop control framework, enabling performance-aware flight control without requiring online flow simulation. A lightweight hash-based postquantum secure communication protocol is proposed to protect sensor data and control commands within the cyber-physical control loop against emerging quantum-capable adversaries. Simulation results demonstrate improved tracking performance and reduced aerodynamic drag compared to conventional constant-coefficient models, and security analysis confirms that the proposed cryptographic scheme satisfies real-time latency requirements. The framework establishes a unified pipeline integrating CFD-based physical intelligence, autonomous control, and quantum-resistant cryptographic security for safety-critical aerospace cyber-physical systems.",
+
+"keywords": [
+"Computational Fluid Dynamics (CFD)", "Post-Quantum Cryptography", "Quantum-Resilient Security", "Cyber-Physical Systems", "Autonomous Flight Control", "Reduced-Order Modeling", "Aerodynamic Optimization", "Secure Control Systems", "Hash-Based Cryptography"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.19624946",
+
+"pdf":"articles/Vol1/Issue1/IJCAI-Vol1-Issue1-5.pdf",
+
+"volume":"1",
+
+"issue":"1",
+
+"pages":"58-85",
+
+"received":"26 Mar 2026",
+
+"accepted":"15 Apr 2026",
+
+"published":"17 Apr 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue1-6",
+
+"title":"Artificial Intelligence in Rural Water Governance: Challenges, Opportunities, and Sustainable Pathways for India",
+
+"authors":[
+"Abhisikta Basu",
+"Avishikta Chatterjee",
+"Debarghya Kundu"
+],
+
+"affiliations":[
+"IEM’s International Institute of Juridical Sciences (IIIJS), University of Engineering and Management, Kolkata",
+"Department of law, Stockholm University, Sweden",
+"IEM’s International Institute of Juridical Sciences (IIIJS), University of Engineering and Management, Kolkata"
+],
+
+"abstract":"Experts predict that by 2025 water demand will increase 55% leading to severe water scarcity. Artificial intelligence (AI) has the potential to revolutionize water management, and optimize water usage and improve efficiency in managing water resources, especially in developing nations like India where poverty and limited resources pose challenges. Despite its benefits, AI faces technical challenges, data security, ethical dilemmas, and stands out to be barriers for small-scale farmers. Addressing these issues and maximizing AI's potential can lead to significant improvements in global water security and agricultural sustainability, in rural India. TaKaDu, an Israeli water management system, powered by artificial intelligence, is gaining international recognition for its 24/7 monitoring platform that effectively tracks leaks and faulty taps, saving water, time, and money. In 2020, Tucson, Arizona implemented AI technology from VODA.ai to proactively manage its water system, predicting pipe breaks using machine learning. If we simultaneously analyze these models the Israeli water conservation system can be implemented in the Indian scenario, with some changes. With the growing population and diminishing water resources, India faces challenges in water management, especially in rural areas where water scarcity poses threats to agriculture, health, energy, and the environment. In rural India, ineffective water monitoring not only exacerbates scarcity but also exposes communities to serious health risks arising from contaminated groundwater. By harnessing AI's capabilities for real-time monitoring, accurate predictions, and improved decision-making, India can enhance its water management practices and create a more sustainable future. This paper will focus on different schemes like Jal Shakti, Jal Sanchay, Jal Jeevan, PM Krishi Sanchay Yojana etc., for rural water management and highlight how implementation of AI presents significant opportunities to transform water management practices in India and globally, promoting sustainable agricultural practices, efficient water usage, and improved water security for all.",
+
+"keywords": [
+"Water governance", "Artificial intelligence", "Rural India", "Sustainable water management", "Public policy"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.19625242",
+
+"pdf":"articles/Vol1/Issue1/IJCAI-Vol1-Issue1-6.pdf",
+
+"volume":"1",
+
+"issue":"1",
+
+"pages":"86-121",
+
+"received":"6 Feb 2026",
+
+"accepted":"16 Apr 2026",
+
+"published":"17 Apr 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue1-7",
+
+"title":"Privex: A Privacy-Preserving Online Meeting System Using Hybrid Cryptography",
+
+"authors":[
+"Tiyasa Paul",
+"Rohan Samanta",
+"Pratik Saha",
+"Partha Pratim Chaulia",
+"Sudip Kumar Palit"
+],
+
+"affiliations":[
+"Institute of Engineering and Management, University of Engineering and Management, Kolkata, West Bengal, India"
+],
+
+"abstract":"In this paper, a behaviour-sensitive session orchestration architecture over secure communication and the rationale behind it will be proposed and discussed, which is a variant of mixed public-key cryptography that aims at offering more manageable, secret, and authenticity in real-time messaging infrastructure. The architecture incorporates the use of RSA and Diffie Hellman in ensuring the setup of user sessions and relies on AES to encrypt instantaneous messages very quickly. Multi-fernet algorithm supports the distribution of session keys and ensures that the key is recovered by the authorized parties only. There are also digital signatures based on RSA that facilitate authentication and non-repudiation but strong hash algorithms are applied to ensure the privacy of user passwords. The system has collaborative features along with cryptographic protection, including co-host delegation, active user blocking, permissions and multi-session to support multi-user logins. Also, the design enables the dynamically updating of the authentication credentials without disruption of the existing communication. The suggested hybrid configuration has a higher level of defense against cryptographic attacks and unauthorized access than single algorithm implementations, which is why it is a more robust and secure solution. In conclusion, the provided solution contributes to the fact that the process of communication in the environment of multi-users becomes much safer, convenient, and manageable.",
+
+"keywords": [
+"End-to-End Encryption", "Authentication", "Non-Repudiation", "Multi-Session Management", "Co-Host Delegation", "Message Automation"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.19627442",
+
+"pdf":"articles/Vol1/Issue1/IJCAI-Vol1-Issue1-7.pdf",
+
+"volume":"1",
+
+"issue":"1",
+
+"pages":"122-161",
+
+"received":"21 Jan 2026",
+
+"accepted":"10 Apr 2026",
+
+"published":"17 Apr 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue2-1",
+
+"title":"Unified Transformer Framework for Integrated Language Vision Understanding and Content Generation",
+
+"authors":[
+"Anuj Attri",
+"HariOm"
+],
+
+"affiliations":[
+"School of Computer Science Engineering, Lovely Professional University, Phagwara Punjab India"
+],
+
+"abstract":"In this paper, a behaviour-sensitive session orchestration architecture over secure communication and the rationale behind it will be proposed and discussed, which is a variant of mixed public-key cryptography that aims at offering more manageable, secret, and authenticity in real-time messaging infrastructure. The architecture incorporates the use of RSA and Diffie Hellman in ensuring the setup of user sessions and relies on AES to encrypt instantaneous messages very quickly. Multi-fernet algorithm supports the distribution of session keys and ensures that the key is recovered by the authorized parties only. There are also digital signatures based on RSA that facilitate authentication and non-repudiation but strong hash algorithms are applied to ensure the privacy of user passwords. The system has collaborative features along with cryptographic protection, including co-host delegation, active user blocking, permissions and multi-session to support multi-user logins. Also, the design enables the dynamically updating of the authentication credentials without disruption of the existing communication. The suggested hybrid configuration has a higher level of defense against cryptographic attacks and unauthorized access than single algorithm implementations, which is why it is a more robust and secure solution. In conclusion, the provided solution contributes to the fact that the process of communication in the environment of multi-users becomes much safer, convenient, and manageable.",
+
+"keywords": [
+"Contrastive-Generative Pretraining", "Modal Representation", "Image Captioning", "Multimodal Transformers"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.20445840",
+
+"pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue2-1.pdf",
+
+"volume":"1",
+
+"issue":"2",
+
+"pages":"162-176",
+
+"received":"23 April 2026",
+
+"accepted":"28 May 2026",
+
+"published":"29 May 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue2-2",
+
+"title":"Hybrid Deep Learning and Frequency-Domain Approaches for Robust SSVEP-Based BCI Speller Systems",
+
+"authors":[
+"Srinivas Rao Gorre",
+"Radha Krishna J",
+"Radha Krishna J",
+"Nishanth Reddy S"
+],
+
+"affiliations":[
+"Electronics and Communication Engineering, Vasavi College of Engineering, Hyderabad, India"
+],
+
+"abstract":"Brain-Computer Interfaces (BCIs) have revolutionized the way we directly interface human brain with machines, offering new hope for people with motor disabilities. Steady-State Visual Evoked Potential (SSVEP)-based BCIs have been increasingly attractive due to their high signal-to-noise ratio, negligible training requirements and high information transfer rates. But classification of SSVEP signals is difficult due to noise, individual differences, and the overlap of harmonics. In this paper, we propose a multi-model hybrid approach for classifying SSVEPs in BCI spellers by combining classic frequency-based signal processing models with deep learning models. The proposed framework, in contrast to the traditional approaches that employ single classification models, explores and integrates a range of methodologies, such as Filter Bank Canonical Correlation Analysis (FBCCA), Depthwise EEGNet, subject-specific Convolutional Neural Networks (CNN), fine-tuned hybrid models, and windowed hybrid classifiers. Moreover, a two-stage hierarchical classification approach is proposed to enhance classification performance and robustness. The proposed framework is tested on multi-subject data sets, showing the hybrid methods' abilities to learn both the spectral and spatial-temporal characteristics of the EEG. The findings show the benefits of using deterministic signal processing techniques along with learning-based models to enhance the robustness and transferability of SSVEP classification. In summary, the research lays down the foundation for investigating and improving different classification approaches for SSVEP, which can be used for designing robust and scalable BCI spellers..",
+
+"keywords": [
+"Steady-State Visual Evoked Potential (SSVEP),", "Brain–Computer Interface (BCI)", "Electroencephalography (EEG)", "Filter Bank Canonical Correlation Analysis (FBCCA)", "Convolutional Neural Networks (CNN)", "EEGNet", "Hybrid Models", "Two-Stage Classification", "Domain Adaptation", "Temporal Feature Extraction", "BCI Speller Systems", "Signal Processing", "Deep Learning", "Human–Computer Interaction"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.20620646",
+
+"pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue2-2.pdf",
+
+"volume":"1",
+
+"issue":"2",
+
+"pages":"177-211",
+
+"received":"5 May 2026",
+
+"accepted":"30 May 2026",
+
+"published":"10 Jun 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue2-4",
+
+"title":"Predicting Urbanization Under Universal Health Coverage: A Comparative Machine Learning Analysis of Socioeconomic Determinants",
+
+"authors":[
+"Mirza Samiulla Beg"
+],
+
+"affiliations":[
+"Dept. of Computer Science and Engineering, Poornima University, Jaipur, India"
+],
+
+"abstract":"The objective of universal health coverage (UHC) is to eradicate inequalities in accessing healthcare services; however, disparities exist between urban and rural areas and require prediction methods to allocate resources effectively. Therefore, this paper explores the relationship between socioeconomic factors and urbanization under the universal health coverage policy via proposing and analyzing various machine learning models. Our research involves a global longitudinal dataset covering the period between 2000 and 2022 and consisting of UHC Service Coverage Indices of many nations. After performing data preprocessing procedures, five types of supervised models, namely, forward and stepwise logistic regression, decision trees, random forests, gradient boosting, and neural networks, are built. Their performance is evaluated based on Kolmogorov–Smirnov (KS) Youden index, area under receiver operating characteristic (ROC) curve, and cumulative lift. Hyperparameters of the algorithms are optimized through a process called hyperparameter tuning. Ultimately, our model is found to be forward logistic regression that yields a KS Youden value of 0.7846, 98.22% accuracy, 0.8953 AUC, and 3.85 cumulative lift at the 10% quantile. That is, it is about four times better than random guessing. Income Quintile is found to be the most significant predictor variable in all predictive models, after which Unit and Value follow. It is particularly interesting to see that linear logistic regression performs better than advanced models; thus, indicating that the association between indicators related to UHC and urbanization can indeed be explained using certain non-chaotic rules. This paper contributes to policy-making by providing an algorithmic tool that will help estimate future healthcare infrastructure needs and allocate resources efficiently in areas experiencing rapid urbanization processes.",
+
+"keywords": [
+"Universal Health Coverage", "Machine Learning, Urbanization", "Socioeconomic Factors", "Predictive Modeling", "Healthcare Infrastructure"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.20839377",
+
+"pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue2-4.pdf",
+
+"volume":"1",
+
+"issue":"2",
+
+"pages":"236-250",
+
+"received":"16 Jun 2026",
+
+"accepted":"25 Jun 2026",
+
+"published":"29 Jun 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue2-3",
+
+"title":"VerityNet: A Hybrid CNN Framework for Deepfake Detection",
+
+"authors":[
+"Yash Rawal", 
+"Shivam Sati", 
+"Meet Shah", 
+"Swapnil Bhagat"
+],
+
+"affiliations":[
+"Dept. of Computer Science Engineering, Thakur college of Engineering and Technology, Mumbai, India"
+],
+
+"abstract":"Deepfakes have quickly advanced to a point where fabricated visuals and voices are often indistinguishable from reality, enabling misinformation, financial scams, and reputation damage. To counter these risks, this work introduces VerityNet, a deepfake detection framework that merges the strengths of EfficientNetB0, VGG16, and a lightweight custom CNN. Instead of depending on a single feature extractor, the system applies majority voting across three independently optimized models to improve reliability against varied manipulation styles. Experiments on a large, heterogeneous dataset demonstrate a 94% accuracy rate, while preserving operational efficiency suitable for deployment scenarios. The study also evaluates model interpretability using Grad-CAM and discusses future improvements including multimodal fusion and transformer-based variants for enhanced resilience.",
+
+"keywords": [
+"Universal Health Coverage", "Machine Learning, Urbanization", "Socioeconomic Factors", "Predictive Modeling", "Healthcare Infrastructure"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.21056022",
+
+"pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue2-3.pdf",
+
+"volume":"1",
+
+"issue":"2",
+
+"pages":"212-235",
+
+"received":"22 Apr 2026",
+
+"accepted":"16 Jun 2026",
+
+"published":"2 Jul 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue2-5",
+
+"title":"A Lightweight Real-Time Ransomware Detection System Based on File System Behavioral Monitoring",
+
+"authors":[
+"Joel Francis", 
+"Barnali Gupta Banik" 
+],
+
+"affiliations":[
+"Neerja Modi World School, Jaipur, Rajasthan, India",
+"Mahatma Gandhi Institute of Technology, Hyderabad, India"
+],
+
+"abstract":"Ransomware is a persistent security threat. It is so effective because of the rapidity of encryption and interruption of systems forced into paralyzed operations. Yet static signature-based antivirus systems fail to provide sufficient protection against ransomware, especially zero-day attacks that lack identifiable signatures during their initial stages. Instead, a more efficient and adaptable approach comes from detection systems that actively monitor specific behaviors in real time. This paper presents a lightweight ransomware detection system based on file operations that operates in real time and leverages dynamic behavioral features of real-world attacks, such as abnormal read, write, and rename operations, systematic file modifications, and intensive I/O activities that typify high-frequency encryption. Focusing on these behavioral features allows a system to detect ransomware (and differentiate it from legitimate user activity) without relying on previously established malware signatures.",
+
+"keywords": [
+"Behavioral Analysis", "File System Monitoring", "I/O Request Packets (IRP)", "Machine Learning", "Shannon’s Entropy", "Ransomware Detection", "Real-Time Security", "Zero-Day Attacks"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.21127413",
+
+"pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue2-5.pdf",
+
+"volume":"1",
+
+"issue":"2",
+
+"pages":"251-262",
+
+"received":"20 Jun 2026",
+
+"accepted":"1 Jul 2026",
+
+"published":"8 Jul 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue2-6",
+
+"title":"Accessible Health Screening: A Portable System for Early Detection of Toxin Elevation Linked to Kidney Disorders",
+
+"authors":[
+"Adarsh Nandi", 
+"Pritam Sadhu", 
+"Nilanjana Dutta Roy", 
+"Shubhajit Bhar", 
+"Subhankar Mukherjee", 
+"Souvik Pal"
+],
+
+"affiliations":[
+"Department of Computer Science and Engineering, Techno International New Town, Kolkata, India",
+"Department of Computer Science and Engineering, Techno International New Town, Kolkata, India",
+"Department of Computer Science and Engineering, Amity School of Engineering and Technology, Amity University Kolkata, India",
+"Agriculture and Environmental Electronics (AEE) Group, Centre for Development of Advanced Computing, Kolkata, India",
+"Agriculture and Environmental Electronics (AEE) Group, Centre for Development of Advanced Computing, Kolkata, India"
+],
+
+"abstract":"The objective of this work is to serve as an initial screening for potential kidney diseases. It serves as an early indicator of increased toxin levels in the human body. A large portion of the population still lacks immediate and urgent access to diagnostic services. It often overlooks the timely care required to prevent such health risks. To address these challenges, a cost-effective, user-friendly, and accessible prototype for detecting toxins in urine samples has been developed, providing results faster than conventional diagnostic techniques. The system offers an essential preliminary assessment to help determine whether an individual should seek further medical evaluation. Its performance is comparable to standard clinical procedures, and the results have been validated by CDAC, Kolkata, in accordance with their established protocols. This initiative aims to strengthen early detection efforts and improve health outcomes, particularly for communities with limited access to healthcare resources.",
+
+"keywords": [
+"Urine analysis", "Android Studio", "OpenCV", "Firebase", "RGB values", "Albumin", "Creatinine"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.21394094",
+
+"pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue2-6.pdf",
+
+"volume":"1",
+
+"issue":"2",
+
+"pages":"263-296",
+
+"received":"22 Jun 2026",
+
+"accepted":"10 Jul 2026",
+
+"published":"16 Jul 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI-Vol1-Issue2-7",
+
+"title":"Legal and Security Challenges in Cyber-Physical Systems: A Framework for Secure and Compliant IoT Ecosystems",
+
+"authors":[
+"Sunetra Chatterjee", 
+"Akash Chatterjee"
+],
+
+"affiliations":[
+"IFIM School of Technology, IFIM College, Bengaluru, India",
+"Department of Law, University of Calcutta, Kolkata, India"
+],
+
+"abstract":"Cyber-Physical Systems (CPS) have become the technological foundation of modern critical infrastructures, including smart grids, industrial automation, healthcare systems, intelligent transportation systems, and autonomous vehicles. By integrating physical processes with computational intelligence, communication networks, and sensing technologies, CPS enable real-time monitoring, automation, and intelligent decision-making. However, the rapid convergence of Artificial Intelligence (AI), Internet of Things (IoT), cloud computing, and operational technologies has significantly expanded the cyberattack surface of CPS ecosystems. As a result, cybersecurity incidents can lead not only to data breaches but also to physical damage, operational disruption, legal liability, regulatory penalties, and public safety risks. Existing research predominantly focuses on technical security mechanisms while providing limited attention to legal compliance, governance, privacy protection, and AI accountability. This paper addresses this gap by proposing the Secure and Compliant Cyber-Physical Systems Framework (SCCF), a multidisciplinary governance architecture integrating cybersecurity, data governance, AI governance, and legal-regulatory compliance. A comparative analysis of the Information Technology Act, 2000, Digital Personal Data Protection Act, 2023, GDPR, NIST CSF 2.0, ISO/IEC 27001, and IEC 62443 is conducted to identify governance requirements relevant to CPS environments. The findings reveal that existing frameworks remain fragmented and fail to provide comprehensive guidance for integrating security and compliance. The proposed SCCF introduces a five-layer governance model consisting of Physical Security, Cybersecurity, Data Governance, AI Governance and Ethics, and Legal-Regulatory Compliance. The framework operationalizes Security-by-Design, Privacy-by-Design, Compliance-by-Design, and Governance-by-Design principles, enabling organizations to develop secure, trustworthy, and legally compliant CPS ecosystems.",
+
+"keywords": [
+"Cyber-Physical Systems", "IoT Security", "GDPR", "DPDP Act 2023", "AI Governance", "Compliance-by-Design"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.21668409",
+
+"pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue2-7.pdf",
+
+"volume":"1",
+
+"issue":"2",
+
+"pages":"297-314",
+
+"received":"3 Jul 2026",
+
+"accepted":"25 Jul 2026",
+
+"published":"29 Jul 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI 1(1)",
+
+"title":"Interdisciplinary Journal of Computing & AI Vol 1, Issue 1",
+
+"authors":[
+"Mohuya Chakraborty, (Ed.)"
+],
+
+"affiliations":[
+"Cybersecurity Centre of Excellence, University of Engineering and Management, Kolkata, India"
+],
+
+"abstract":"I have the honor of holding the position of Editor-in-Chief for the Interdisciplinary Journal of Computing & AI (IJCAI). It is with great pride and enthusiasm that I introduce the first issue of the Interdisciplinary Journal of Computing & AI (IJCAI). This inaugural edition represents our vision of creating a rigorous, inclusive, and forward-looking platform for cutting-edge research at the intersection of computing and artificial intelligence. The articles featured in this issue have undergone a careful peer-review process and reflect both depth and diversity in research. We are honored to include contributions from esteemed institutions across the United States, Sweden, and India, demonstrating the global relevance of the themes we aim to promote. A key highlight of this issue is that all published papers are indexed in OpenAIRE, reinforcing our commitment to open-access dissemination, research transparency, and international discoverability. This milestone significantly enhances the academic reach and credibility of the work published in IJCAI. The acceptance rate for this issue is 35%. Each paper embodies originality, methodological soundness, and relevance to current technological challenges. As Editor-in-Chief, I would like to express my gratitude to the authors for their valuable contributions, the reviewers for their insightful feedback, and the editorial board for their unwavering support in maintaining the quality and integrity of this publication. We are committed to continuously improving the journal’s standards and expanding its reach through recognized indexing platforms and global collaborations. We invite researchers and practitioners to contribute to future issues and be part of this growing academic community.",
+
+"keywords": [
+"A clinically significant study on predicting 28-day readmission risks in heart failure patients, contributing to data-driven healthcare", "A comparative and optimization-focused analysis of GPU power management using Python and MATLAB simulations",
+"An innovative AI-based virtual try-on system enhanced with biometric security for design and user personalization", "A novel blockchain-enabled federated learning platform enabling privacy-preserving ad preference modelling and decentralized creator reward distribution",
+"A novel integration of computational fluid dynamics with post-quantum secure control in cyber-physical systems",
+"Artificial intelligence in the governance of rural water systems and investigating the challenges, opportunities and sustainability in India",
+"Advancements in privacy-preserving online communication through hybrid cryptographic frameworks"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.19674476",
+
+"pdf":"articles/Vol1/Issue1/IJCAI 1(1).pdf",
+
+"volume":"1",
+
+"issue":"1",
+
+"pages":"i–vii; 1-161",
+
+"received":"10 Jan 2026",
+
+"accepted":"30 Apr 2026",
+
+"published":"30 Apr 2026",
+
+"license":"CC BY 4.0"
+},
+{
+"id":"IJCAI 1(2)",
+
+"title":"Interdisciplinary Journal of Computing & AI Vol 1, Issue 2",
+
+"authors":[
+"Mohuya Chakraborty, (Ed.)"
+],
+
+"affiliations":[
+"Cybersecurity Centre of Excellence, University of Engineering and Management, Kolkata, India"
+],
+
+"abstract":"It is my privilege to present Volume 1, Issue 2 of the Interdisciplinary Journal of Computing & AI (IJCAI). This issue represents an important step in the journal's continuing journey of promoting rigorous, ethical, and impactful interdisciplinary research. The encouraging response received from researchers across India reaffirms the need for a publication platform that combines academic excellence with a transparent, constructive, and author-centric editorial process. For this issue, IJCAI received 38 submissions, of which 7 manuscripts were accepted after a comprehensive editorial assessment and peer-review process, resulting in an acceptance rate of 18.4%. Every submission was evaluated based on originality, technical merit, methodological soundness, clarity of presentation, and potential contribution to the research community. The seven published papers collectively showcase the breadth of contemporary computing research. They address topics including multimodal transformer architectures, brain-computer interfaces, deepfake detection, machine learning for public health analytics, ransomware detection, intelligent healthcare screening systems, and legal-security frameworks for cyber-physical systems. Together, these contributions demonstrate the increasingly interdisciplinary nature of computing and artificial intelligence research. One of the most encouraging aspects of this issue is its pan-India representation. Authors from premier institutions located in Punjab, Telangana, Maharashtra, Rajasthan, Karnataka, and West Bengal have contributed to this volume, reflecting both the diversity and quality of research being conducted across the country. I extend my heartfelt appreciation to our reviewers for their thoughtful and constructive evaluations, to our Editorial Board for their unwavering support, and to every author who entrusted IJCAI with their scholarly work. Their collective efforts have enabled us to publish a high-quality issue while upholding the journal's commitment to academic integrity and editorial excellence. As IJCAI continues to evolve, our vision remains unchanged—to provide an inclusive, ethical, and globally visible platform for interdisciplinary research that advances science, technology, and innovation. I hope our readers find this issue informative, inspiring, and valuable in their own research endeavours.",
+
+"keywords": [
+"Interdisciplinary", "Computing", "AI"
+],
+
+"doi":"https://doi.org/10.5281/zenodo.21672521",
+
+"pdf":"articles/Vol1/Issue1/IJCAI 1(2).pdf",
+
+"volume":"1",
+
+"issue":"2",
+
+"pages":"i-xiv, 162-314",
+
+"received":"23 Apr 2026",
+
+"accepted":"31 Jul 2026",
+
+"published":"31 Jul 2026",
+
+"license":"CC BY 4.0"
+}
+]
