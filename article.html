@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IJCAI — Interdisciplinary Journal of Computing & AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- TOP PUBLISHER BAND -->
+<div class="publisher-bar">
+  <div class="container-fluid d-flex align-items-center px-2">
+    
+    <img src="assets/img/Aspiration Logo.png" alt="APT" height="34" class="me-2">
+    
+    <span class="publisher-text">
+      Aspiration Publishing Trust
+    </span>
+
+  </div>
+</div>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+  <img src="assets/img/logo-placeholder.png" alt="IJCAI" height="40" class="me-2">
+  <div>
+    <div style="font-weight:700; font-size:1.05rem;">IJCAI</div>
+    <div class="journal-subtitle">
+  Interdisciplinary Journal of Computing & AI
+</div>
+  </div>
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="aims.html">Aims & Scope</a></li>
+          <li class="nav-item"><a class="nav-link" href="board.html">Editorial Board</a></li>
+          <li class="nav-item"><a class="nav-link" href="current.html">Current Issue</a></li>
+          <li class="nav-item"><a class="nav-link active" href="archives.html">Archives</a></li>
+          <li class="nav-item"><a class="nav-link" href="authors.html">Author Guidelines</a></li>
+          <li class="nav-item"><a class="nav-link" href="cfp.html">Call for Papers</a></li>
+          <li class="nav-item"><a class="nav-link" href="submit.html">Submit</a></li>
+          <li class="nav-item"><a class="nav-link" href="ethics.html">Ethics</a></li>
+          <li class="nav-item"><a class="nav-link" href="review.html">Review</a></li>
+          <li class="nav-item"><a class="nav-link" href="apc.html">APC</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- ARTICLE -->
+
+    <main class="container py-5">
+
+        <!-- Title -->
+
+        <h2 class="mb-3 text-primary" id="title"></h2>
+
+<div class="alert alert-light border">
+
+<strong>Research Article</strong>
+
+
+
+</div>
+
+        <!-- Authors -->
+
+        <p class="lead mb-1" id="authors"></p>
+
+
+
+        <!-- Affiliations -->
+
+        <p class="text-muted mb-4" id="affiliations"></p>
+
+
+
+        <!-- Dates -->
+        <p class="small text-muted">
+
+<strong>Received:</strong>
+<span id="received"></span>
+
+&nbsp; | &nbsp;
+
+<strong>Accepted:</strong>
+<span id="accepted"></span>
+
+&nbsp; | &nbsp;
+
+<strong>Published:</strong>
+<span id="published"></span>
+
+</p>
+
+
+
+        <!-- DOI -->
+
+        <p>
+
+            <strong>DOI:</strong>
+
+            <span id="doi" ></span>
+
+        </p>
+
+
+
+        <!-- Abstract -->
+
+        <section>
+
+            <h6 class="mt-4 mb-2 text-uppercase fw-bold">Abstract</h6>
+
+            <p id="abstract"></p>
+
+        </section>
+
+
+
+        <!-- Keywords -->
+
+        <section>
+
+            <h6 class="mt-4 mb-2 text-uppercase fw-bold">Keywords</h6>
+
+            <p id="keywords"></p>
+
+        </section>
+
+
+
+        <!-- Download -->
+
+        <section>
+
+            <a id="download"
+   class="btn btn-primary"
+   target="_blank">
+
+📄 Download PDF
+
+</a>
+
+        </section>
+
+
+
+        <!-- Citation -->
+
+        <section>
+
+            <h6 class="mt-4 mb-2 text-uppercase fw-bold">How to Cite</h6>
+
+            <p id="citation"></p>
+
+        </section>
+
+
+
+        <!-- License -->
+
+        <section>
+
+            <h6 class="mt-4 mb-2 text-uppercase fw-bold">License</h6>
+
+            <p>
+
+                This article is distributed under the
+
+                Creative Commons Attribution 4.0 International License.
+
+            </p>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+  <footer class="footer"><div class="container text-center"><p>© <span id="y6"></span> Aspiration Publishing Trust</p></div></footer>
+  <script>document.getElementById('y6').innerText=new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="assets/js/article.js"></script>
+
+</body>
+
+</html>
