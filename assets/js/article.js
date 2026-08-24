@@ -42,7 +42,17 @@ document.getElementById("published").textContent =
 article.published;
 
 // DOI
-document.getElementById("doi").textContent = article.doi;
+//document.getElementById("doi").textContent = article.doi;
+const doi = document.getElementById("doi");
+
+doi.innerHTML = `
+    <a href="${article.doi}"
+       target="_blank"
+       rel="noopener noreferrer">
+       ${article.doi}
+    </a>
+`;
+  
 
 // Abstract
 document.getElementById("abstract").textContent =
