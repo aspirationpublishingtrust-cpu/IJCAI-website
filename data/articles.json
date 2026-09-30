@@ -504,7 +504,7 @@
 "Urine analysis", "Android Studio", "OpenCV", "Firebase", "RGB values", "Albumin", "Creatinine"
 ],
 
-"doi":"https://doi.org/10.5281/zenodo.21394094",
+"doi":"https://doi.org/10.67872/ijcai.122026006"",
 
 "pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue2-6.pdf",
 
@@ -558,6 +558,52 @@
 "accepted":"25 Jul 2026",
 
 "published":"29 Jul 2026",
+
+"license":"CC BY 4.0"
+},
+  {
+"id":"IJCAI-Vol1-Issue3-1",
+
+"title":"EndoLens: AI-Based Endometriosis Lesion Detection and Severity Analysis",
+
+"authors":[
+"Mayurakshi Roy", 
+"Tamanna Saha", 
+"Nilanjana Dutta Roy" 
+],
+
+"affiliations":[
+"Amity Institute of Biotechnology and Nanotechnology, Amity University Kolkata, India",
+"1Amity Institute of Biotechnology and Nanotechnology, Amity University Kolkata, India",
+"Amity School of Engineering and Technology, Amity University Kolkata, India."
+],
+
+"abstract":"Endometriosis is a gynecological condition characterized by the presence of endometriallike tissue outside the uterus. Diagnosis may involve imaging and laparoscopic evaluation, and visual identification of lesions can be challenging. This work presents EndoLens, a machine-learning framework for binary detection and localization of endometriotic
+lesions in laparoscopic images. The reported experiments use images from the publicly available ENID and GLENDA datasets; ultrasound, MRI, and hysteroscopy images are discussed as background modalities but were not used in the experiments reported here. The
+experimentally evaluated component distinguishes lesion-positive from lesionnegative images and localizes suspected lesions using YOLO-based object detection. The manuscript previously described a color-based multi-class severity analysis; this component is now explicitly presented as a proposed future extension because an independent
+experimental validation of severity classification is not reported in the present study. The reported internal results include training accuracy of 97–98%, validation accuracy of 95–96%, and AUC-ROC values in the range of 0.94–0.98. These values are
+internal training/validation results and should not be interpreted as independent final-test performance. The current study therefore focuses on the experimentally supported lesion detection/localization component and identifies independent external validation, standardized object-detection metrics, and
+validated severity classification as necessary next steps.",
+
+"keywords": [
+"Machine Learning–Based Lesion Detection", "YOLO26n", "GLENDA", "ENID", "Lesion Severity", "Color-based Lesion Detection"
+],
+
+"doi":"https://doi.org/10.67872/ijcai.132026001"",
+
+"pdf":"articles/Vol1/Issue2/IJCAI-Vol1-Issue3-1.pdf",
+
+"volume":"1",
+
+"issue":"3",
+
+"pages":"315-329",
+
+"received":"10 Aug 2026",
+
+"accepted":"21 Sep 2026",
+
+"published":"30 Sep 2026",
 
 "license":"CC BY 4.0"
 },
