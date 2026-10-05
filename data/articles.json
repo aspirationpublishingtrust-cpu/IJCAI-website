@@ -602,6 +602,43 @@
 
 "license":"CC BY 4.0"
 },
+  {
+"id":"IJCAI-Vol1-Issue3-2",
+
+"title":"A Gradient Boosting-Based Predictive Framework for GIS-Integrated Managed Aquifer Recharge Site Selection and Infrastructure Optimization",
+
+"authors":[
+"Mirza Samiulla Beg"
+],
+
+"affiliations":[
+"Department of Computer Science and Engineering, Poornima University, Jaipur, India."
+],
+
+"abstract":"MAR plays an important role in managing groundwater shortage in growing urban areas, yet it requires precise analysis and the right structure choice, which until now, was done based on heuristics. In this paper, we suggest an innovative system that combines a Gradient Boosting regressor and deterministic decision algorithm to automate this process. Our approach uses an input eighteen-dimensional vector representing such parameters as annual rainfall, soil infiltration speed, runoff volume, type of roofs, and percentage of soil texture. The Gradient Boosting method builds a series of regression trees in a step-by-step manner, learning from residuals produced by previous ensemble of models based on squared error loss. In particular, our approach is able to capture non-linear dependencies in the data, such as when very high content of clay makes the project unfeasible only above some certain value, while infiltration plays the main multiplicative role. These discrete structural recommendations – Recharge Trench, Borewell, or Do Nothing – are then determined from the outputted continuous score using a decision function that optimizes both the threshold values for categorization, as well as the impact of soil types, which have been treated in a categorical manner. These threshold values are obtained from the test data used to validate the model; hence no calibration process is required. One of the key novel aspects of this project is the replacement of empirical estimation with a learned function that incorporates the complex interactions between spatial and geological elements within the splits themselves. Recommendations based on this learned function will minimize the average squared error, and will be specific to the location under consideration. This framework provides actionable results, greatly lowering the degree of subjective effort inherent in conventional feasibility mapping.",
+
+"keywords": [
+"Gradient Boosting", "Managed Aquifer Recharge (MAR)", "Geographic Information Systems (GIS)", "Site Suitability Analysis", "Infrastructure Optimization"
+],
+
+"doi":"https://doi.org/10.67872/ijcai.132026002",
+
+"pdf":"articles/Vol1/Issue3/IJCAI-Vol1-Issue3-2.pdf",
+
+"volume":"1",
+
+"issue":"3",
+
+"pages":"330-361",
+
+"received":"22 Sep 2026",
+
+"accepted":"05 Oct 2026",
+
+"published":"06 Oct 2026",
+
+"license":"CC BY 4.0"
+},
 {
 "id":"IJCAI 1(1)",
 
