@@ -639,6 +639,45 @@
 
 "license":"CC BY 4.0"
 },
+
+{
+"id":"IJCAI-Vol1-Issue3-3",
+
+"title":"Data-Driven Estimation of Soil Moisture from Agronomic and Environmental IoT Variables: A Comparative Evaluation of Gradient Boosting, Random Forest, Neural Network and Ensemble Models for Precision Agriculture",
+
+"authors":[
+"Mirza Samiulla Beg"
+],
+
+"affiliations":[
+"Department of Computer Science and Engineering, Poornima University, Jaipur, India."
+],
+
+"abstract":"Background: Soil moisture is used for irrigation planning and for crop yield estimation. It's a very expensive parameter to get dense data on, and the dataset is often incomplete. ML can be used to estimate soil moisture from other agronomic and environmental variables measured at the same point in time, but the accuracy of the estimate is very much dependent on the choice of predictors and the choice of ML model. Methods: A synthetic dataset of 1,000 plots (Precision_Agriculture_IoT.csv) was used (the name contains “IoT”, but there is no field sensor experiment, site or calibration in the data). Seven predictor candidates were considered (air temperature, relative humidity, nitrogen, phosphorus and potassium content, crop variety and yield), both with and without yield (which is only observable at harvest). All of the models (mean, linear, ridge, lasso, elastic-net, decision tree, random forest, gradient boosting, histogram gradient boosting and neural network) were evaluated using nested cross-validation (5 outer folds x 2 repetitions, 3-fold inner tuning, random seed 42), with 95% CIS using the Nadeau–Bengio variance correction, leave-one-crop-out validation and permutation importance. The original one-split SAS Model Studio analysis (60/30/10 split), which also includes an equal-weight ensemble, is included as an example only. The ensemble was evaluated on that one split and not as part of the nested cross-validation. Results: For yield, the linear models were just as good as the boosting and neural networks (linear regression RMSE 3.60 pp, R² 0.939 [0.932, 0.945]; gradient boosting RMSE 3.87, R² 0.929 [0.915, 0.944]) with the CIS overlapping. Without the yield, the accuracy was much lower: the best-performing model (gradient boosting) had RMSE 9.48 and R² 0.576 [0.537, 0.615], with the CIS again overlapping those of the random forest and the linear models. Without the yield in leave-one-crop-out validation, all the models were less accurate than the average of the training samples. Permutation importance showed that the nitrogen information is transmitted through the yield, whereas crop type and temperature carry the information when yield is not considered; humidity, phosphorus and potassium were all meaningless. Conclusions: The high accuracy achieved in this example using tree-based boosting methods results from having a post-harvest predictive variable. This level of accuracy is also achieved using simple linear models. It should be noted that the with-yield model is purely a post-harvest reconstruction. There is no claim that this model will work at field-scale, during-season or operationally. The data have been generated, so the accuracies given are a result of the simulation.",
+
+"keywords": [
+"precision agriculture (context only)", "soil moisture estimation", "synthetic data", "synthetic benchmark", "target leakage", "nested cross-validation", "gradient boosting", "permutation importance" 
+],
+
+"doi":"https://doi.org/10.67872/ijcai.132026003",
+
+"pdf":"articles/Vol1/Issue3/IJCAI-Vol1-Issue3-3.pdf",
+
+"volume":"1",
+
+"issue":"3",
+
+"pages":"362-381",
+
+"received":"14 Oct 2026",
+
+"accepted":"12 Nov 2026",
+
+"published":"23 Nov 2026",
+
+"license":"CC BY 4.0"
+},
+ 
 {
 "id":"IJCAI 1(1)",
 
